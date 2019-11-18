@@ -1,83 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; // Renombrar a Router.
 import './App.css';
 
-/*
-function HelloWord(props) {
-  return (
-    <div>
-      <h1 id="Hello"> 
-        Hola Mundo {props.name} 
-      </h1>
-      <h2>
-        {props.subtitle}
-      </h2>
-    </div>
-  );
-}
-*/
+// Components.
+import Header from './components/header/header.js';
+import Footer from './components/footer/footer.js';
+import Home from './components/home/home.js';
 
-class HelloWord extends React.Component {
-  state = {
-    show: true
-  }
-
-  cambiarEstado = () => {
-    this.setState({ show: !this.state.show});
-  }
-
-  render(){
-    if(this.state.show) {
-      return(
-        <div>
-          <h1 id="Hello">
-            Hola Mundo {this.props.name}
-          </h1>
-          <h2>
-            {this.props.subtitle}
-          </h2>
-          <button onClick={this.cambiarEstado}> Cambiar estado </button>
-        </div>
-      );
-    }
-    else {
-      return(
-        <div>
-        <h1> No hay elementos </h1>
-        <button onClick={this.cambiarEstado}> Cambiar estado </button>
-        </div>
-      );
-    }
-  }
-}
-
-/* Componentes con funciones Arrow.
-const App = () => (
-    <div> 
-      <HelloWord/> <HelloWord/>
-    </div>
-);
-*/
-
-// Componentes con funciones normales.
-function App() {
-  return (
-    <div className="App">
-      <HelloWord name="Alfredo" subtitle="Componente 1"/> 
-      <HelloWord name="Angelica" subtitle="Componente 2"/>
-    </div>
-  );
-}
-
-/* Componentes con clases.
-class App extends React.Component {
+export default class App extends Component {
   render(){
     return (
-      <div>
-        <HelloWord/> <HelloWord/>
-      </div>
+      <Router>
+        <Header/>
+        <div className="menu">
+          <Link to="/" className="ops"> Home </Link>
+          <Link to="/blog" className="ops"> Blog </Link>
+          <Link to="/create-post" className="ops"> Crear un post </Link>
+        </div>   
+        <Route exact path="/" component={ Home }/>
+        <Footer/>
+      </Router>
     );
   }
 }
-*/
 
-export default App;
+/*
+        <Route exact path="/" render={ ()=> { // exact
+          return (
+            <div>
+              HOLA
+            </div>
+          );
+        }}>
+        </Route>
+
+        <Route path="/hey" component={ Footer }/>
+
+        <Route path="/footer" render={ ()=> {
+          return (
+            <div>
+              Hola
+            </div>
+          );
+        }}>
+        </Route>
+
+*/
