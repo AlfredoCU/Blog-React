@@ -1,0 +1,45 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    width: 60%;
+    height: 80%;
+    margin-top: 50px;
+    padding: 2%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.der {
+    margin-right: 5%;
+}
+
+.img {
+    width: 250px;
+    animation: move infinite 20s linear;
+}
+
+.title {
+    text-align: center;
+}
+
+.text1 {
+    text-align: justify;
+}
+
+.text2 {
+    color: #222222;
+    font-weight: lighter;
+    text-align: center;
+}
+
+@keyframes move {
+    form { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

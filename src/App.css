@@ -1,22 +1,64 @@
-.App {
-  text-align: center;
+.menu {
+    text-align: center;
+    padding: 20px;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-logo {
-  height: 40vmin;
+.ops {
+    margin: 2%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.total {
+    text-align: center;
+    padding: 1%;
 }
 
-.App-link {
-  color: #09d3ac;
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 50px;
+    padding: 2%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+}
+
+.card-header {
+    border-bottom: solid;
+    border-color: teal;
+}
+
+.card-footer {
+ display: flex;
+ justify-content: space-around;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.bot {
+    margin-right: 10px;
+    width: 20% !important;
+}
+
+.btn-re {
+    background-color: rgb(214, 0, 0) !important;
+}
+
+.btn-re:hover {
+    background-color: rgb(119, 5, 5) !important;
+}
+
+.btn-re:active {
+    background-color: rgb(226, 8, 8) !important;
 }
