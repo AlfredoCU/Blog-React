@@ -13,3 +13,31 @@
     font-weight: lighter;
     text-decoration: none;
 }
+
+.total {
+    text-align: center;
+    padding: 1%;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 50px;
+    padding: 2%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+}
+
+.card-header {
+    border-bottom: solid;
+    border-color: teal;
+}
+
+.card-footer {
+ display: flex;
+ justify-content: space-between;
+}

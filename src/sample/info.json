@@ -1,0 +1,44 @@
+{
+    "info":[
+        {
+            "title": "10 tips para ser un buen programación",
+            "category": "Desarrollo",
+            "summary": "Vamos a iniciar.",
+            "Description": "Tener buenos habitos de programación es fundamental.",
+            "author": "Eloi Tanis",
+            "tags": "Programación"
+        },
+        {
+            "title": "10 comandos utiles de linux Debian",
+            "category": "Sistemas Operativos",
+            "summary": "Tener conocimiento de comados.",
+            "Description": "Esta es la lista de los comandos más comunes de linux Debian.",
+            "author": "Alfredo CU",
+            "tags": "SO Linux"
+        },
+        {
+            "title": "Como Hackear Camaras de Seguridad como en Mr Robot",
+            "category": "Seguridad",
+            "summary": "Aprender a como hackear camaras como Mr.Robot.",
+            "Description": "El día de hoy les explicare como fue que mr.robot logró hackear las cámaras de seguridad.",
+            "author": "Mr.Ebola",
+            "tags": "Mr.Robot"
+        },
+        {
+            "title": "Cómo Facebook te rastrea en Android (incluso si no tienes una cuenta de Facebook)",
+            "category": "Redes sociales",
+            "summary": "SDK es como una navaja suiza.",
+            "Description": "Facebook es capaz de rastrear debido a que los desarrolladores de Android de aplicaciones de terceros (ejemplo: Indeed job search).",
+            "author": "Hackwise",
+            "tags": "Android"
+        },
+        {
+            "title": "NextCry",
+            "category": "Desarrollo",
+            "summary": "TNextCry, el ransomware que cifra datos en servidores Linux NextCloud",
+            "Description": "Investigadores han encontrado un nuevo ransomware en el entorno que, actualmente no es detectado por los motores antivirus en las plataformas de escaneo público. ",
+            "author": "Sirius Black",
+            "tags": "NextCry"
+        }
+    ]
+}
